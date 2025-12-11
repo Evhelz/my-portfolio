@@ -11,7 +11,7 @@ This is the personal portfolio website of **Michelle Fernandez**, a UI/UX Design
 - **Education Section**: Academic background with icons and timeline.
 - **Contact Section**: Contact details including phone, email, GitHub, and LinkedIn.
 - **Responsive Design**: Works on desktop, tablet, and mobile devices.
-- **Smooth Animations**: Hover effects and transitions for interactive UI.
+- **Smooth Animations**: Hover effects.
 
 ## Tech Stack
 
