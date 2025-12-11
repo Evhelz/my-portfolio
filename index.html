@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michelle Fernandez | Portfolio</title>
+
+  <!--Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--Font-->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="scroll-smooth bg-white text-gray-900">
+
+<!-- NAVBAR -->
+<header class="w-full fixed top-0 left-0 bg-white/90 backdrop-blur shadow z-50">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+    <h1 class="text-xl font-bold tracking-wide text-purple-700">Michelle Fernandez</h1>
+
+    <!-- DESKTOP MENU (UNCHANGED) -->
+    <ul class="hidden md:flex items-center gap-8 font-medium text-purple-700">
+      <li><a href="#hero" class="hover:text-purple-600">Home</a></li>
+      <li><a href="#about" class="hover:text-purple-600">About</a></li>
+      <li><a href="#education" class="hover:text-purple-600">Education</a></li>
+      <li><a href="#projects" class="hover:text-purple-600">Projects</a></li>
+      <li><a href="#contact" class="hover:text-purple-600">Contact</a></li>
+      <li>
+        <a href="https://www.canva.com/design/DAG7JS8DfXU/nbIcbnf812L0udZ-LzZHLw/view"
+           class="px-4 py-2 rounded-lg bg-purple-600 text-white hover:bg-purple-700">
+          Resume
+        </a>
+      </li>
+    </ul>
+
+    <!--MOBILE BUTTON -->
+    <button id="menuBtn" class="md:hidden text-2xl text-purple-700">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+    <ul class="flex flex-col items-center py-4 gap-4 font-medium text-purple-700">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO SECTION-->
+<section
+  id="hero"
+  class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-8 pt-32 max-w-7xl mx-auto">
+
+  <!-- TEXT SIDE -->
+  <div class="max-w-xl text-center md:text-left">
+    <p class="text-lg text-gray-500 tracking-wide">
+      Hello, I’m
+    </p>
+
+    <h1 class="text-5xl md:text-6xl font-extrabold mt-3 leading-tight">
+      Michelle <span class="text-purple-700">Fernandez</span>
+    </h1>
+
+    <p class="mt-4 text-xl text-gray-600">
+      UI/UX Designer & Developer
+    </p>
+
+    <!-- BUTTONS -->
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
+      <a
+        href="#projects"
+        class="px-8 py-3 bg-purple-600 text-white rounded-2xl text-lg shadow-lg hover:bg-purple-700 transition duration-300 text-center">
+        View Projects
+      </a>
+
+      <a
+        href="#contact"
+        class="px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-2xl hover:bg-purple-100 transition duration-300 text-center">
+        Contact Me
+      </a>
+    </div>
+  </div>
+
+  <!-- IMAGE SIDE -->
+  <div class="relative flex items-center justify-center w-full md:w-auto">
+    <!-- BACKGROUND CIRCLES -->
+    <div class="absolute w-72 md:w-96 h-72 md:h-96 rounded-full bg-purple-200 shadow-inner"></div>
+    <div class="absolute w-80 h-80 md:w-96 md:h-96 rounded-full bg-purple-200 opacity-60 blur-3xl -z-10 transform rotate-12"></div>
+    <div class="absolute w-72 h-72 md:w-88 md:h-88 rounded-full bg-purple-300 opacity-50 blur-3xl -z-10 transform rotate-45"></div>
+    <div class="absolute w-64 h-64 md:w-80 md:h-80 rounded-full bg-purple-400 opacity-70 blur-2xl -z-10 transform -rotate-12"></div>
+
+    <!-- PROFILE IMAGE -->
+    <img 
+      src="assets/mich.png" 
+      alt="Michelle Fernandez" 
+      class="relative w-64 md:w-96 h-64 md:h-96 rounded-full border-4 border-white shadow-lg bg-purple-100">
+  </div>
+
+</section>
+
+</section>
+
+<!-- ABOUT SECTION & SKILLS-->
+<section id="about" class="py-24 bg-gray-50 px-8">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-purple-700 mb-10">About Me</h2>
+
+    <!-- ABOUT CARD -->
+    <div class="flex flex-col md:flex-row items-center gap-12 bg-white p-10 shadow-xl rounded-xl">
+      <img src="assets/mich.png"
+           class="w-40 h-40 rounded-full object-cover border-4 border-purple-200">
+
+      <p class="text-lg text-gray-700 leading-relaxed text-center md:text-left">
+        Hi! I'm <strong>Michelle Fernandez</strong>, a 21-year-old 4th-year Bachelor of Science in Information Technology student and aspiring Web Designer & Front-End Developer. 
+        I specialize in building <strong>responsive websites</strong>, <strong>mobile apps</strong>, and creating seamless <strong>UI/UX designs</strong>. 
+        My passion lies in designing visually appealing and user-friendly experiences using modern web and mobile technologies.
+      </p>
+    </div>
+
+    <!-- SKILLS HEADING -->
+    <div class="text-center mt-16">
+      <h3 class="text-2xl font-bold text-purple-700 mb-4">My Core Skills</h3>
+      <p class="text-gray-600">Technologies and tools I use to build web & mobile applications</p>
+    </div>
+
+    <!-- SKILLS GRID -->
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- HTML -->
+      <div class="bg-white p-6 rounded-xl shadow text-center border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+        <i class="fa-brands fa-html5 text-4xl text-orange-600 mb-2"></i>
+        <p class="font-semibold text-gray-800">HTML5</p>
+      </div>
+
+      <!-- CSS -->
+      <div class="bg-white p-6 rounded-xl shadow text-center border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+        <i class="fa-brands fa-css3-alt text-4xl text-blue-600 mb-2"></i>
+        <p class="font-semibold text-gray-800">CSS3</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="bg-white p-6 rounded-xl shadow text-center border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+        <i class="fa-brands fa-js text-4xl text-yellow-500 mb-2"></i>
+        <p class="font-semibold text-gray-800">JavaScript</p>
+      </div>
+
+      <!-- React Native -->
+      <div class="bg-white p-6 rounded-xl shadow text-center border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+        <i class="fa-brands fa-react text-4xl text-sky-500 mb-2"></i>
+        <p class="font-semibold text-gray-800">React Native</p>
+      </div>
+
+      <!-- Firebase -->
+      <div class="bg-white p-6 rounded-xl shadow text-center border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+        <i class="fa-solid fa-fire text-4xl text-orange-500 mb-2"></i>
+        <p class="font-semibold text-gray-800">Firebase</p>
+      </div>
+
+      <!-- Laravel -->
+      <div class="bg-white p-6 rounded-xl shadow text-center border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+        <i class="fa-brands fa-laravel text-4xl text-red-600 mb-2"></i>
+        <p class="font-semibold text-gray-800">Laravel</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="py-16 px-6">
+  <h2 class="text-4xl font-bold text-purple-700 text-center mb-12">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+    <!-- Project 1: StoryTold -->
+    <div class="p-6 rounded-3xl shadow-lg border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105 flex flex-col justify-between">
+      <div>
+        <img src="assets/stwhite.png" class="w-20 mx-auto mb-6">
+        <h3 class="text-2xl font-semibold text-purple-800 text-center mb-3">StoryTold</h3>
+        <p class="text-gray-700 text-center text-sm md:text-base">
+          A mobile app for reading and writing short stories, allowing users to explore, create, and share their own content. It offers a clean and engaging interface for a seamless storytelling experience.
+        </p>
+      </div>
+      <a href="https://www.canva.com/design/DAG7KK__j3c/_-CXyc3Ii8U0mc-9-TPZ2g/view?utm_content=DAG7KK__j3c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7f4b71d9fc"
+         target="_blank"
+         class="mt-6 py-2 px-5 bg-purple-600 text-white rounded-full text-center font-semibold shadow hover:bg-purple-700 hover:scale-105 transition transform">
+        View Demo
+      </a>
+    </div>
+
+    <!-- Project 2: Resortvation -->
+    <div class="p-6 rounded-3xl shadow-lg border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105 flex flex-col justify-between">
+      <div>
+        <img src="assets/resortvation.png" class="w-20 mx-auto mb-6">
+        <h3 class="text-2xl font-semibold text-purple-800 text-center mb-3">Resortvation</h3>
+        <p class="text-gray-700 text-center text-sm md:text-base">
+          UI/UX design for an online resort reservation system created for Rainbow’s End Resort & Glamping, offering a smooth and intuitive booking experience. Users can browse accommodations, check availability, and make reservations efficiently.
+        </p>
+      </div>
+      <a href="https://www.figma.com/proto/h3o5KORVaR8bkFT1uR09bK/RESORTVATION-PROTOTYPE--Sia---Copy-?node-id=0-1&t=71JiMBXHFNTgKEZo-1"
+         target="_blank"
+         class="mt-6 py-2 px-5 bg-purple-600 text-white rounded-full text-center font-semibold shadow hover:bg-purple-700 hover:scale-105 transition transform">
+        View Demo
+      </a>
+    </div>
+
+    <!-- Project 3: LERA -->
+    <div class="p-6 rounded-3xl shadow-lg border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105 flex flex-col justify-between">
+      <div>
+        <img src="assets/LERA.png" class="w-20 mx-auto mb-6">
+        <h3 class="text-2xl font-semibold text-purple-800 text-center mb-3">LERA: Learning Review Application</h3>
+        <p class="text-gray-700 text-center text-sm md:text-base">
+          An Android study companion designed to help students review smarter with features like flashcards, a Pomodoro timer, and progress tracking. It provides an organized and efficient way to manage study sessions and monitor improvement over time.
+        </p>
+      </div>
+      <a href="https://www.canva.com/design/DAG7KOnHNpc/sHZt8tPujgaG2jHgdE8U5g/view?utm_content=DAG7KOnHNpc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h163a50b695"
+         target="_blank"
+         class="mt-6 py-2 px-5 bg-purple-600 text-white rounded-full text-center font-semibold shadow hover:bg-purple-700 hover:scale-105 transition transform">
+        View Demo
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section id="education" class="py-24 px-8 bg-white">
+  <h2 class="text-3xl font-bold text-center text-purple-700 mb-12">Education</h2>
+  <div class="max-w-5xl mx-auto grid gap-6">
+    <div class="p-6 rounded-xl shadow flex gap-4 border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+      <i class="fa-solid fa-graduation-cap text-3xl text-purple-700"></i>
+      <div>
+        <h3 class="font-bold text-purple-700">BS Information Technology</h3>
+        <p>Universidad de Dagupan</p>
+        <span class="text-gray-500">2022 – Present</span>
+      </div>
+    </div>
+
+    <div class="p-6 rounded-xl shadow flex gap-4 border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+      <i class="fa-solid fa-laptop-code text-3xl text-purple-700"></i>
+      <div>
+        <h3 class="font-bold text-purple-700">ICT – Computer Systems Servicing</h3>
+        <p>Mangaldan National High School</p>
+        <span class="text-gray-500">2016 – 2020</span>
+      </div>
+    </div>
+
+    <div class="p-6 rounded-xl shadow flex gap-4 border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+      <i class="fa-solid fa-award text-3xl text-purple-700"></i>
+      <div>
+        <h3 class="font-bold text-purple-700">6th Honorable Mention</h3>
+        <p>Macayug Elementary School</p>
+        <span class="text-gray-500">2010 – 2016</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-24 px-8">
+  <h2 class="text-3xl font-bold text-center text-purple-700 mb-12">Contact Me</h2>
+
+  <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+    <!-- Phone -->
+    <div class="p-6 rounded-xl text-center shadow border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105">
+      <i class="fa-solid fa-phone text-2xl text-purple-700 mb-2"></i>
+      <p>+63 967 338 0154</p>
+    </div>
+
+    <!-- Email -->
+    <a href="mailto:mf386300@gmail.com" target="_blank"
+       class="p-6 rounded-xl text-center shadow border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105 block">
+      <i class="fa-solid fa-envelope text-2xl text-purple-700 mb-2"></i>
+      <p>mf386300@gmail.com</p>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/Evhelz" target="_blank"
+       class="p-6 rounded-xl text-center shadow border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105 block">
+      <i class="fa-brands fa-github text-2xl text-purple-700 mb-2"></i>
+      <p>github.com/Evhelz</p>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/michelle-fernandez-01854637a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
+       class="p-6 rounded-xl text-center shadow border-2 border-transparent hover:border-purple-500 transition transform hover:scale-105 block">
+      <i class="fa-brands fa-linkedin-in text-2xl text-purple-700 mb-2"></i>
+      <p>linkedin.com/in/michelle-fernandez</p>
+    </a>
+
+  </div>
+</section>
+
+<footer class="py-6 text-center bg-white shadow-inner">
+  © 2025 Michelle Fernandez. All rights reserved.
+</footer>
+
+<!-- JS FOR MOBILE MENU -->
+<script>
+  document.getElementById("menuBtn").onclick = () => {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  };
+</script>
+
+</body>
+</html>
